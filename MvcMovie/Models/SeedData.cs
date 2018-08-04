@@ -22,7 +22,8 @@ namespace MvcMovie.Models
                        Title = "When Harry Met Sally",
                        ReleaseDate = DateTime.Parse("1989-1-11"),
                        Genre = "Romantic Comedy",
-                       Price = 7.99M
+                       Price = 7.99M,
+                       Rating="二级"
                    },
 
                      new Movie
@@ -30,7 +31,8 @@ namespace MvcMovie.Models
                          Title = "Ghostbusters ",
                          ReleaseDate = DateTime.Parse("1984-3-13"),
                          Genre = "Comedy",
-                         Price = 8.99M
+                         Price = 8.99M,
+                         Rating = "三级"
                      },
 
                      new Movie
@@ -38,7 +40,8 @@ namespace MvcMovie.Models
                          Title = "Ghostbusters 2",
                          ReleaseDate = DateTime.Parse("1986-2-23"),
                          Genre = "Comedy",
-                         Price = 9.99M
+                         Price = 9.99M,
+                         Rating = "二级"
                      },
 
                    new Movie
@@ -46,16 +49,26 @@ namespace MvcMovie.Models
                        Title = "Rio Bravo",
                        ReleaseDate = DateTime.Parse("1959-4-15"),
                        Genre = "Western",
-                       Price = 3.99M
+                       Price = 3.99M,
+                       Rating = "二级"
                    },
                     new Movie
                     {
                         Title = "秦时明月",
                         ReleaseDate = DateTime.Parse("2016-4-15"),
                         Genre = "动画片",
-                        Price = 120.50M
-                    }
-                  );
+                        Price = 120.50M,
+                        Rating = "一级"
+                    },
+                      new Movie
+                      {
+                          Title = "天行九歌",
+                          ReleaseDate = DateTime.Parse("2016-4-15"),
+                          Genre = "动画片",
+                          Price = 120.50M,
+                          Rating = "一级"
+                      }
+                  ); 
                 context.SaveChanges();
 
             }
